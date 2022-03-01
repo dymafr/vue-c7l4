@@ -13,6 +13,7 @@ const props = defineProps({
     },
   },
   price: Number,
+  available: Boolean,
 });
 const title = computed(() => props.name.toUpperCase());
 </script>
