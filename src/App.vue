@@ -6,7 +6,7 @@
 import { ref } from 'vue';
 import Product from './Product.vue';
 
-const product = ref('Voiture');
+const product = ref('moto');
 </script>
 
 <style scoped lang="scss"></style>

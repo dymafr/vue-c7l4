@@ -8,6 +8,9 @@ const props = defineProps({
   name: {
     type: String,
     required: true,
+    validator(value: string): boolean {
+      return value.length > 10;
+    },
   },
   price: Number,
 });
