@@ -6,7 +6,7 @@
 import { computed } from 'vue';
 import ProductI from './interfaces/product.interface.ts';
 
-const props = defineProps<{product: ProductI}>());
+const props = defineProps<{ product: ProductI }>();
 const title = computed(() => props.name.toUpperCase());
 </script>
 
