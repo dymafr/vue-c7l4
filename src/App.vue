@@ -1,12 +1,17 @@
 <template>
-  <Product :price="1500" :name="product" available />
+  <Product :product="product" />
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { reactive } from 'vue';
 import Product from './Product.vue';
+import ProductI from './interfaces/product.interface.ts';
 
-const product = ref('Voiture');
+const product: ProductI = reactive({
+  available: true,
+  price: 1500,
+  name: 'Moto',
+});
 </script>
 
 <style scoped lang="scss"></style>
